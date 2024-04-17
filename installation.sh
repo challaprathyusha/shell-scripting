@@ -18,3 +18,5 @@ then
 else
     echo "installation of mysql is success"
 fi
+
+dnf install git -y
