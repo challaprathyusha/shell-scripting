@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dnf install mysql -y
+sudo dnf install mysql -y
