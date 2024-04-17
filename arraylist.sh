@@ -1,5 +1,5 @@
 #!/bin/bash
-movies=("bahubali","animal","RRR","sye","fidaa")
+movies=("bahubali" "animal" "RRR" "sye" "fidaa")
 
 echo "print first movie name ::${movies[0]}"
 echo "print second movie name ::${movies[1]}"
