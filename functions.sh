@@ -13,11 +13,11 @@ validate(){
 }
 
 dnf install mysql -y
-validate $? installing mysql
+validate $? mysqlinstallation
 
 
 
 dnf install git -y
-validate $? installing git
+validate $? gitinstallation
 
 
