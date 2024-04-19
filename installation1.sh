@@ -21,12 +21,14 @@ validate(){
   fi  
 }
 
+
+dnf install git -y
+validate $? git
+
 dnf install mysqlh -y
 validate $? mysql
 
 
 
-dnf install git -y
-validate $? git
 
 
