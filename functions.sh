@@ -8,16 +8,20 @@ fi
 
 validate(){
 
-    echo "Exit status is:$1"
-    echo "What are you doing?:$2"
+  if [ $1 -ne 0]
+  then
+    echo "$2 installation....FAILURE"
+  else
+    echo "$2 installation.....SUCCESS"
+  fi  
 }
 
 dnf install mysql -y
-validate $? mysqlinstallation
+validate $? mysql
 
 
 
 dnf install git -y
-validate $? gitinstallation
+validate $? git
 
 
