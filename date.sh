@@ -1,5 +1,5 @@
 date =$(date --date=$i)
 echo "$date"
-touch datefile.txt
+touch /home/ec2-user/shell-scripting/datefile.txt
 $date --file=datefile.txt
 cat datefile.txt
