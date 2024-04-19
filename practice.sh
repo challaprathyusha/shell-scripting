@@ -8,3 +8,8 @@ for i in ${m[@]}
 do
 echo "$i"
 done
+
+date =$(date --date)
+echo "$date"
+$date --file=datefile.txt
+cat datefile.txt
