@@ -5,7 +5,7 @@ SCRIPT_NAME=$(echo $0|cut -d "." -f1)
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 R="\e[31m"
 G="\e[33m"
-Y="\e[32m
+Y="\e[32m"
 N="\e[0m"
 
 if [ $USERID -ne 0 ]
