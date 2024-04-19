@@ -12,8 +12,8 @@ if [ $USERID -ne 0 ]
 then 
     echo "you dont have super user previlages to run the command"
     exit 12
-elase
-    echo"You are super user"
+else
+    echo"You are a super user"
 fi
 
 validate(){
