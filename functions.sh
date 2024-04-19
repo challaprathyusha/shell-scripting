@@ -1,6 +1,6 @@
 #!/bin/bash
 USERID=$(id -u)
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then 
     echo "you dont have super user previlages to run the command"
     exit 12
