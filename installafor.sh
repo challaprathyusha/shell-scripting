@@ -13,7 +13,7 @@ then
     echo "you dont have super user previlages to run the command"
     exit 12
 else
-    echo"You are a super user"
+    echo "You are a super user"
 fi
 
 validate(){
