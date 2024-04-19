@@ -31,9 +31,6 @@ validate $? $i
 
 dnf install $i -y &>>$LOG_FILE
 validate $? $i
-
-dnf install $i -y &>>$LOG_FILE
-validate $? $i
 done
 
 
