@@ -18,8 +18,8 @@ cd $SOURCEFOLDER
 FILES="$(find . -name "*.log" -mtime +14)"
 echo "files that are more than 14 days old:$FILES"
 
-while IFS= read -r line
+while read -r line
 do 
-echo $line
+echo "Delete file:$line"
 rm -rf $line
 done < $FILES
