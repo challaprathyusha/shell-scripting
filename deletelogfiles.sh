@@ -11,5 +11,5 @@ else
 fi 
 cd $SOURCEFOLDER
 
-FILES=${find . type -f -name "*.log" -mtime +14}
+FILES=$find . type -f -name "*.log" -mtime +14
 echo "files that are more than 14 days old:$FILES"
