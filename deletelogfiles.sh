@@ -13,3 +13,9 @@ fi
 cd $SOURCEFOLDER
 FILES="$(find . -name "*.log" -mtime +14)"
 echo "files that are more than 14 days old:$FILES"
+
+while read -r line
+do 
+echo $line
+rm -rf $line
+done < $FILES
