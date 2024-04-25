@@ -1,5 +1,5 @@
 #!/bin/bash
-FILE="/home/ec2-user/shell-scripting/file.txt"
+FILE=file.txt
 
 while read -r line
 do
