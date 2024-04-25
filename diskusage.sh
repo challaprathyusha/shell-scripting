@@ -9,7 +9,7 @@ DISKUSAGE=$(echo "$line"|awk -F " " '{print$6F}'|cut -d "%" -f1)
 FOLDER=$(echo "$line"|awk -F " " '{print$NF}')
 if [ $DISKUSAGE -ge $DISKTHRESHOLD ]
 then    
-   MESSAGE+="$FOLDER is $DISKUSAGE, which is greater then $DISKTHRESHOLD \n"
+   MESSAGE+="$FOLDER is $DISKUSAGE, which is greater then $DISKTHRESHOLD"
 fi
 done <<< $FILESYSTEM
 
