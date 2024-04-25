@@ -13,4 +13,4 @@ then
 fi
 done <<< $FILESYSTEM
 
-echo "message:$MESSAGE"
+echo -e  "message:$MESSAGE"
