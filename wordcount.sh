@@ -8,7 +8,7 @@ k=$(echo $s| tr " " "\n" | sort | uniq)
 echo $k
 for word in $k
 do
-    occurence=$(echo $s|grep -o "$i" |wc -l)
+    occurence=$(echo $s|grep -o "$word" |wc -l)
     echo "$word:$occurence"
 done
 
