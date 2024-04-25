@@ -1,13 +1,15 @@
 #!/bin/bash
 FILE=file.txt
 
-while read -r line
+#cat $FILE |grep -o 'word'|wc -l
+
+
+while read -r word
 do
-    for line in $FILE
-    do 
-        echo $line
-    done
-done <<< $FILE 
+  echo $word
+done < cat $FILE
+
+
 
 
  
