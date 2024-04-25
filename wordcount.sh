@@ -7,7 +7,7 @@ FILE=/home/ec2-user/shell-scripting/file.txt
 while read -r word
 do
   echo $word
-done < cat $FILE
+done <<< cat $FILE
 
 
 
