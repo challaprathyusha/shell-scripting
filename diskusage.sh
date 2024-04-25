@@ -2,7 +2,7 @@
 
 FILESYSTEM=$(df -hT|grep xfs)
 DISKTHRESHOLD=10
-MESSAGE=" "
+
 while read -r line
 do
 DISKUSAGE=$(echo "$line"|awk -F " " '{print$6F}'|cut -d "%" -f1)
