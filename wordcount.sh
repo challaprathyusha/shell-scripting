@@ -10,8 +10,9 @@ for word in $k
 do
     occurence=$(echo $s|grep -o "$word" |wc -l)
     echo "$word:$occurence"
+    echo "$word:$occurence"|awk -F ":" '{print$2F}'
 done
 
-echo "$word:$occurence"|awk -F ":" '{print$2F}'
+#echo "$word:$occurence"|awk -F ":" '{print$2F}'
 
 
