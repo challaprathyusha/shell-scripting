@@ -7,7 +7,7 @@ cat $FILE
 while read -r word
 do
   echo "word:$word"
-  grep -o $word $(cat $FILE)|wc -l
+  #grep -o $word $(cat $FILE)|wc -l
  done <<< $(cat $FILE)
 
  
