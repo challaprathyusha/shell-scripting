@@ -1,5 +1,6 @@
 #!/bin/bash
-FILE=/home/ec2-user/shell-scripting/textfile
+FILE="/home/ec2-user/shell-scripting/textfile"
+
 
 
 #cat $FILE |grep -o 'word'|wc -l
@@ -8,11 +9,12 @@ s=$(cat $FILE)
 echo $s
 k=$(echo $s| tr " " "\n" | sort | uniq)
 echo $k
-for i in $echo $k
+for i in  $k
 do
-    grep '$i' $echo $s |wc -l
+    grep -o '$i' echo "$s"|wc -l
+
 done
 
 
 
- 
+
