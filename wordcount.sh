@@ -6,4 +6,5 @@ FILE=/home/ec2-user/shell-scripting/textfile
 cat $FILE
 k=$(cat $FILE)
 echo $k
+sort echo $k | uniq
  
