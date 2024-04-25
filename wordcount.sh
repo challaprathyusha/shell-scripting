@@ -7,8 +7,8 @@ FILE=/home/ec2-user/shell-scripting/textfile
 s=$(cat $FILE)
 echo $s
 k=$(echo $s| tr " " "\n" | sort | uniq)
-echo $k
-for i in echo $k 
+@=echo $k
+for i in $@
 do
     grep -o '$i' 'echo $s' |wc -l
 done
