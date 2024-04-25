@@ -12,3 +12,5 @@ then
    MESSAGE=echo "$FOLDER is $DISKUSAGE, which is greater then $DISKTHRESHOLD"
 fi
 done <<< $FILESYSTEM
+
+echo "message:$MESSAGE"
