@@ -1,9 +1,9 @@
 FILE=file.txt
 
-grep -o 'I' $FILE
-grep -o 'learn' $FILE
-grep -o 'devops' $FILE
-grep -o 'practice' $FILE
-grep -o 'shell' $FILE
-grep -o 'in' $FILE
-grep -o 'linux' $FILE
+grep -o 'I' $FILE|wc -l
+grep -o 'learn' $FILE|wc -l
+grep -o 'devops' $FILE|wc -l
+grep -o 'practice' $FILE|wc -l
+grep -o 'shell' $FILE|wc -l
+grep -o 'in' $FILE|wc -l
+grep -o 'linux' $FILE|wc -l
