@@ -11,7 +11,7 @@ k=$(echo $s| tr " " "\n" | sort | uniq)
 echo $k
 for i in  $k
 do
-    grep -o '$i' echo "$s"|wc -l
+    echo $s|grep -o '$i' |wc -l
 
 done
 
