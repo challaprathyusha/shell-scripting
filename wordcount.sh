@@ -6,7 +6,8 @@ FILE=/home/ec2-user/shell-scripting/textfile
 cat $FILE
 while read -r word
 do
-  echo "$word"
-done <<< $(cat $FILE)
+  echo "word:$word"
+  grep -o $word $(cat $FILE)|wc -l
+ done <<< $(cat $FILE)
 
  
