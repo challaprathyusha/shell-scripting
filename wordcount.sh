@@ -4,8 +4,10 @@ FILE=/home/ec2-user/shell-scripting/textfile
 
 #cat $FILE |grep -o 'word'|wc -l
 #cat $FILE| uniq
-cat $FILE| tr " " "\n" | sort | uniq
-#k=$(cat $FILE)
+k=$(cat $FILE)
+VARIABLE=$($k| tr " " "\n" | sort | uniqs)
 #echo $k | uniq
+
+
 
  
