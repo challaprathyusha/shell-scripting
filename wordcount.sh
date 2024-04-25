@@ -12,6 +12,6 @@ do
     echo "$word:$occurence"
 done
 
-echo "$word:$occurence"|sort
+echo "$word:$occurence"|awk -F ":" '{print$2F}'
 
 
