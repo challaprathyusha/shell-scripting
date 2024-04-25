@@ -14,4 +14,6 @@ fi
 done <<< $FILESYSTEM
 
 echo -e  "message:$MESSAGE"
+
+#echo "body" | mail -s "subject" "to address"
 echo "Diskusage:$MESSAGE" | mail -s "Date $(date)" cprathyusha94@gmail.com
