@@ -8,7 +8,7 @@ s=$(cat $FILE)
 echo $s
 k=$(echo $s| tr " " "\n" | sort | uniq)
 echo $k
-for i in $(echo $k)
+for i in echo $k
 do
     grep -o '$i' $FILE |wc -l
 done
