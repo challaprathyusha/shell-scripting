@@ -6,10 +6,10 @@ s=$(cat $FILE)
 echo $S
 k=$(echo $s| tr " " "\n" | sort | uniq)
 echo $k
-for i in $k
+for word in $k
 do
     occurence=$(echo $s|grep -o "$i" |wc -l)
-    echo "$i:$occurence"
+    echo "$word:$occurence"
 done
 
 
