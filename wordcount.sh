@@ -1,6 +1,6 @@
 #!/bin/bash
 FILE=$1
-while
+while read -r line
 do
     for word in $FILE
     do 
@@ -11,3 +11,4 @@ do
 done <<< $FILE 
 
 
+ 
