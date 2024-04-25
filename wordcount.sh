@@ -5,7 +5,7 @@ FILE=/home/ec2-user/shell-scripting/textfile
 #cat $FILE |grep -o 'word'|wc -l
 #cat $FILE| uniq
 cat $FILE
-cat $FILE| tr " " "\n" | sort | uniqs
+cat $FILE| tr " " "\n" | sort | uniq
 #echo $k | uniq
 
 
