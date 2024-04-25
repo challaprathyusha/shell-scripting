@@ -5,10 +5,10 @@ FILE=/home/ec2-user/shell-scripting/textfile
 #cat $FILE |grep -o 'word'|wc -l
 #cat $FILE| uniq
 s=$(cat $FILE)
-#echo $s
-k=$(cat $FILE| tr " " "\n" | sort | uniq)
+echo $s
+k=$(echo $s| tr " " "\n" | sort | uniq)
 echo $k 
-for i in $k
+for i in  
 do
     grep -o '$i' cat $FILE|wc -l
 done
