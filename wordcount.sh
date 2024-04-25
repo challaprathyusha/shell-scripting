@@ -9,7 +9,7 @@ cat $FILE| tr " " "\n" | sort | uniq
 #echo $k | uniq
 while read -r word
 do  
-    occurence=(grep -o $word $FILE|wc -l)
+    occurence=(grep -o $word 'cat $FILE'|wc -l)
     echo "$word:$occurence"
 done <<<  'cat $FILE| tr " " "\n" | sort | uniq'
 
