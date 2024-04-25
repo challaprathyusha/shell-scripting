@@ -5,7 +5,7 @@ do
     for line in $FILE
     do 
         echo $line
-        
+    done
 done <<< $FILE 
 
 
