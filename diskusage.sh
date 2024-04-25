@@ -10,4 +10,5 @@ FOLDER=$FILESYSTEM|awk -F " " '{print$NF}'
 if [ $DISKUSAGE -ge $DISKTHRESHOLD ]
 then    
     echo "$FOLDER is $DISKUSAGE, which is greater then $DISKTHRESHOLD"
+fi
 done <<< $FILESYSTEM
