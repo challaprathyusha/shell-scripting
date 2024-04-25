@@ -7,10 +7,10 @@ FILE=/home/ec2-user/shell-scripting/textfile
 s=$(cat $FILE)
 echo $s
 k=$(echo $s| tr " " "\n" | sort | uniq)
-echo $k 
-for i in echo $s 
+echo $k
+for i in echo $k 
 do
-    grep -o '$i' cat $FILE|wc -l
+    grep -o '$i' "echo $s" |wc -l
 done
 
 
