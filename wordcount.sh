@@ -7,7 +7,7 @@ cat $FILE
 while read -r word
 do
   echo "word:$word"
-done <<< cat $FILE
+done <<< 'cat $FILE'
 
 
 
