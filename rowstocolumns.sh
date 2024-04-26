@@ -7,7 +7,7 @@ s=$(cat $FILE)
 #echo $s|awk -F "
 while read -r line
 do
-    echo $line
+    #echo $line
     echo $line|tr -s '[:blank:]' '\n'
 done <<< $s
 
