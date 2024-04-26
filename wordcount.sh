@@ -12,7 +12,7 @@ do
     echo "$word:$occurence"
 done
 
-echo "$word:$occurence"
-sorted_data=$(echo "$word:$occurence"| sort -t ':' -k2,2rn)
-echo "$sorted_data"
+#echo "$word:$occurence"
+#sorted_data=$(echo "$word:$occurence"| sort -t ':' -k2,2rn)
+#echo "$sorted_data"
 
