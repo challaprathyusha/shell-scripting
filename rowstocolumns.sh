@@ -7,5 +7,5 @@ s=$(cat $FILE)
 while read -r line
 do
   k=$(cat $FILE|tr -s '[:blank:]' '\n')
-done <<< echo $s
+done <<< "echo $s"
 
