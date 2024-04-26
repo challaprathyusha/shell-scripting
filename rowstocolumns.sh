@@ -8,7 +8,6 @@ s=$(cat $FILE)
 while read -r line
 do
     echo $line
-    k=$(echo $line|tr -s '[:blank:]' '\n')
-  
+    echo $line|tr -s '[:blank:]' '\n'
 done <<< $s
 
