@@ -1,5 +1,5 @@
 #!/bin/bash
-FILE="/home/ec2-user/shell-scripting/txtfile"
+FILE="/home/ec2-user/shell-scripting/file"
 
 content=$(cat $FILE)
 #k=$(cat $FILE|tr -s '[:blank:]' '\n')
