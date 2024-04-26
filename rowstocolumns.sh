@@ -6,6 +6,8 @@ s=$(cat $FILE)
 #echo $s|awk -F "
 while read -r line
 do
-  k=$(cat $FILE|tr -s '[:blank:]' '\n')
-done <<< echo "$s"
+    echo $line
+    k=$(echo $line|tr -s '[:blank:]' '\n')
+    echo $k
+done <<< echo $s
 
