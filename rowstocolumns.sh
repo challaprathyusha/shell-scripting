@@ -6,7 +6,7 @@ content=$(cat $FILE)
 while read -r line
 do
     #echo $line
-    echo $line|tr -s '[:blank:]' '\n'
+    echo $line|tr -s " " "\n"
     
 done <<< $content
 #echo $line|tr -s '[:blank:]' '\n'|head -n 6||echo $line|tr -s '[:blank:]' '\n'|tail -n 6
