@@ -1,6 +1,6 @@
 #!/bin/bash
 FILE="/home/ec2-user/shell-scripting/txtfile"
-s=$(cat $FILE)
+cat $FILE
 #k=$(cat $FILE|tr -s '[:blank:]' '\n')
 
 #echo $s|awk -F "
@@ -9,5 +9,5 @@ do
     echo $line
     k=$(echo $line|tr -s '[:blank:]' '\n')
     echo $k
-done <<< echo $s
+done <<< 
 
