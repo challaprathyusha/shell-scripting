@@ -9,5 +9,5 @@ do
     echo $line
     k=$(echo $line|tr -s '[:blank:]' '\n')
     echo $k
-done <<< 
+done <<< cat $FILE
 
