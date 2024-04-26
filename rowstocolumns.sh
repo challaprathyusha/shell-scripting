@@ -10,4 +10,6 @@ do
     #echo $line
     echo $line|tr -s '[:blank:]' '\n'
 done <<< $s
+ echo $line|tr -s '[:blank:]' '\n'|head -n 6
+
 
