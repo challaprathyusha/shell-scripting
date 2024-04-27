@@ -5,7 +5,7 @@ TOP5=$(ps aux | sort -nrk 3,3 | head -n 5)
 
 # Print the results
 echo "The top 5 CPU consuming processes are:"
-echo "PID %CPU %MEM COMMAND"
+#echo "PID %CPU %MEM COMMAND"
 while read line
  do
   pid=$(echo $line | awk '{print $2}')
